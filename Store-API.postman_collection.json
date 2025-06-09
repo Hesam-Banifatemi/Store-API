@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "df6e8b20-1b4a-4607-8b5d-a3c971639c23",
+		"name": "Store-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "45333185"
+	},
+	"item": [
+		{
+			"name": "search with query String -method GET",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url-Store}}/goods?pa",
+					"host": [
+						"{{url-Store}}"
+					],
+					"path": [
+						"goods"
+					],
+					"query": [
+						{
+							"key": "select",
+							"value": "rating,title,price,category",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "rating.count",
+							"disabled": true
+						},
+						{
+							"key": "numericFilter",
+							"value": "ratingcount>100",
+							"disabled": true
+						},
+						{
+							"key": "pa",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
