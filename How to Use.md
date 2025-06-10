@@ -1,0 +1,13 @@
+this RESTFULL api with MVC architecture is just for getting and searching through goods of a store
+HOW TO USE:
+THE MAIN URL IS "api/v1/goods", AND THERE ARE SEVERAL SEARCH OPTIONS AND THE USE OF QUERY STRING SYMBOL IS NEEDED "?".
+1)AFTER "?" YOU CAN TYPE AND SEARCH FOR "title", "catagory", "description" LIKE /api/v1/goods?description=da&title=bed&category=men
+2)THERE IS A "numericFilter" KEYWORD WICH IS USED WHEN YOU NEED TO HAVE GOODS WITH FOR EXAMPLE PRICE MORE THAN 10 OR SOMETHING LIKE THAT. 
+api/v1/goods?numericFilter=price>10
+3)USE "select" KEY WORD WHEN YOU JUST WANT SOME PARTS OF THE GOODS LIKE FOR EXAMPLE I JUST WANT PRICE AND TITLE OF ALL GOODS I SHOULD TYPE: 
+api/v1/goods?select=price,title
+4)USE "sort" FOR SORTING LIKE SORT BASED ON PRICE: 
+api/v1/gooods?sort=price
+5)USE "page" FOR PAGINATION FOR EXAMPLE(DEFAULT VALUE IS 1): 
+api/v1/goods?page=3
+6)ALSO THERE IS A "limit" OPTION THAT YOU CAN SET A LIMIT FOR HOW MANY GOODS ARE DISPLAYED. THE DEFAUT VALUE IS 5.
